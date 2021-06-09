@@ -11,10 +11,10 @@ O = {
     number = true,
     relative_number = true,
     shell = 'zsh',
+    shell = 'bash',
 	timeoutlen = 100,
     nvim_tree_disable_netrw = 0,
     extras = false,
-    noswapfile = true,
 
     -- @usage pass a table with your desired languages
     treesitter = {
