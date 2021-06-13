@@ -77,7 +77,9 @@ return require("packer").startup(function(use)
     use {'JoosepAlviste/nvim-ts-context-commentstring', opt = true}
 
     -- Color
-    use {"christianchiarulli/nvcode-color-schemes.vim", opt = true}
+    -- use {"christianchiarulli/nvcode-color-schemes.vim", opt = true}
+    -- use {"siduck76/nvim-base16.lua", opt = true}
+    use {"joshdick/onedark.vim", opt = true}
 
     -- Icons
     use {"kyazdani42/nvim-web-devicons", opt = true}
@@ -88,6 +90,12 @@ return require("packer").startup(function(use)
 
     -- Zen Mode
     use {"Pocco81/TrueZen.nvim", opt = true}
+
+    -- AutoSave
+    use {"907th/vim-auto-save", opt = true}
+
+    -- EasyMotion
+    use {"easymotion/vim-easymotion", opt =true}
 
     require_plugin("nvim-lspconfig")
     require_plugin("lspsaga.nvim")
@@ -109,16 +117,20 @@ return require("packer").startup(function(use)
     require_plugin("git-blame.nvim")
     require_plugin("which-key.nvim")
     require_plugin("dashboard-nvim")
-    require_plugin("nvim-autopairs")
+    -- require_plugin("nvim-autopairs")
     require_plugin("nvim-comment")
     require_plugin("nvim-bqf")
-    require_plugin("nvcode-color-schemes.vim")
+    -- require_plugin("nvcode-color-schemes.vim")
+    -- require_plugin("nvim-base16.lua")
+    require_plugin("onedark.vim")
     require_plugin("nvim-web-devicons")
     require_plugin("galaxyline.nvim")
     require_plugin("barbar.nvim")
     require_plugin('lsp-rooter.nvim')
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
+    require_plugin("vim-auto-save")
+    require_plugin("vim-easymotion")
 
     -- Extras
     if O.extras then

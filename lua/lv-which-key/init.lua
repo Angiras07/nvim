@@ -31,7 +31,11 @@ require("which-key").setup {
         spacing = 3 -- spacing between columns
     },
     hidden = {"<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ "}, -- hide mapping boilerplate
-    show_help = true -- show help message on the command line when the popup is visible
+    show_help = true, -- show help message on the command line when the popup is visible
+    triggers = "auto",
+    triggers_blacklist = {
+    	i = {"f"}
+	}
 }
 
 local opts = {

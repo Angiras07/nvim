@@ -5,14 +5,13 @@ CACHE_PATH = vim.fn.stdpath('cache')
 O = {
     auto_close_tree = 0,
     auto_complete = true,
-    colorscheme = 'nvcode',
+    colorscheme = 'onedark',
     hidden_files = true,
     wrap_lines = false,
     number = true,
     relative_number = true,
     shell = 'zsh',
-    shell = 'bash',
-	timeoutlen = 100,
+	timeoutlen = 200,
     nvim_tree_disable_netrw = 0,
     extras = false,
 
